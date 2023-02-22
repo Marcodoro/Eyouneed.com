@@ -76,7 +76,7 @@ export default {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin: 200px 0px;
+  margin: 145px 0px;
 }
 /* CSS */
 .btn {
