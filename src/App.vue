@@ -39,6 +39,9 @@ export default {
   },
   icons: {
     faBars
+  },
+  computed: {
+    faBars: faBars
   }
 }
 </script>
