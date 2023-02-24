@@ -13,3 +13,16 @@
 [debug] [2023-02-24T17:52:05.420Z] > refreshing access token with scopes: []
 [debug] [2023-02-24T17:52:05.422Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
 [debug] [2023-02-24T17:52:05.422Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-02-24T17:52:05.577Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2023-02-24T17:52:05.577Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-02-24T17:52:05.586Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/eyouneed0:testIamPermissions [none]
+[debug] [2023-02-24T17:52:05.586Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/eyouneed0:testIamPermissions x-goog-quota-user=projects/eyouneed0
+[debug] [2023-02-24T17:52:05.586Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/eyouneed0:testIamPermissions {"permissions":["cloudconfig.configs.get","cloudconfig.configs.update","firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]}
+[debug] [2023-02-24T17:52:05.761Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2023-02-24T17:52:05.761Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[debug] [2023-02-24T17:52:05.810Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/eyouneed0:testIamPermissions 200
+[debug] [2023-02-24T17:52:05.810Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/eyouneed0:testIamPermissions {"permissions":["cloudconfig.configs.get","cloudconfig.configs.update","firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]}
+[debug] [2023-02-24T17:52:05.811Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/eyouneed0 [none]
+[debug] [2023-02-24T17:52:06.098Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/eyouneed0 200
+[debug] [2023-02-24T17:52:06.099Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/eyouneed0 {"projectId":"eyouneed0","projectNumber":"991001322293","displayName":"eyouneed","name":"projects/eyouneed0","resources":{"hostingSite":"eyouneed0","realtimeDatabaseInstance":"eyouneed0-default-rtdb","storageBucket":"eyouneed0.appspot.com","locationId":"europe-west"},"state":"ACTIVE","etag":"1_102d7afc-7ee4-4b04-9e7a-edbd53fa1441"}
+[debug] [2023-02-24T17:52:06.099Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/eyouneed0 [none]
