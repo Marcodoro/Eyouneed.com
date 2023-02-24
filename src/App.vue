@@ -1,7 +1,6 @@
 <template>
   <div class="wrapper">
     <nav>
-      <font-awesome-icon :icon="faBars" />
       <router-link to="/" class="home" :class="{hover: hovering}" @mouseleave="notHoveringnow()" @mouseenter="hoveringFunction()">Home</router-link> 
       <router-link to="/about" class="about" :class="{hover: hovering2}" @mouseleave="notHoveringnow2()" @mouseenter="hoveringFunction2()"> About</router-link>
     </nav>
@@ -9,9 +8,7 @@
   <router-view/>
 </template>
 <script>
-import "font-awesome/css/font-awesome.min.css"
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-import { faBars } from '@fortawesome/free-solid-svg-icons'
+
 
 export default {
   data() {
@@ -34,23 +31,9 @@ export default {
       this.hovering2 = false
     }
   },
-  components: {
-    FontAwesomeIcon
-  },
-  icons: {
-    faBars
-  },
-  computed: {
-    faBars: faBars
-  }
 }
 </script>
 <style>
-@import '@fortawesome/fontawesome-svg-core/styles.css';
-font-awesome-icon {
-  font-size: 50px;
-  color: black;
-}
 .hover {
   font-size: calc(16px + 5px);
   color: black;
@@ -68,8 +51,10 @@ a {
 }
 nav {
   display: grid;
-  height: 45px;
-  background: rgb(106, 106, 106);
+  height: 4.0vw;
+  max-height: 50px;
+  min-height: 42px;
+  background: rgb(255, 255, 255);
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 45px;
   text-align: center;
